@@ -1,6 +1,9 @@
 import { useState, useEffect } from "react";
 
+// Lista słów do gry
 const words = ["prokrastynacja", "szczebrzeszyn", "chomik", "kwarc", "piwo"];
+
+// Funkcja losująca słowo z listy
 const getRandomWord = () => {
   return words[Math.floor(Math.random() * words.length)];
 };
@@ -10,6 +13,7 @@ const Hangman = () => {
   const [guesses, setGuesses] = useState([]);
   const [wrongGuessses, setWrongGuesses] = useState(0);
 
+  // Funkcja obsługująca odgadnięcie litery
   const handleGuess = (letter) => {
     if (guesses.includes(letter)) return;
     setGuesses([...guesses, letter]);
