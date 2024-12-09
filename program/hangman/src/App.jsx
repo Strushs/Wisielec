@@ -1,7 +1,20 @@
 import { useState, useEffect } from "react";
 
 // Lista słów do gry
-const words = ["kod", "html", "css", "java", "algorytm", "procesor", "funkcja", "zmienna", "tablica", "parametr", "serwer", "biblioteka"];
+const words = [
+  "kod",
+  "html",
+  "css",
+  "java",
+  "algorytm",
+  "procesor",
+  "funkcja",
+  "zmienna",
+  "tablica",
+  "parametr",
+  "serwer",
+  "biblioteka",
+];
 
 // Funkcja losująca słowo z listy
 const getRandomWord = () => {
