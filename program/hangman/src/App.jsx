@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 
 // Lista słów do gry
-const words = ["prokrastynacja", "szczebrzeszyn", "chomik", "kwarc", "piwo"];
+const words = ["kod", "html", "css", "java", "algorytm", "procesor", "funkcja", "zmienna", "tablica", "parametr", "serwer", "biblioteka"];
 
 // Funkcja losująca słowo z listy
 const getRandomWord = () => {
@@ -82,7 +82,7 @@ const Hangman = () => {
   const WinScreen = () => {
     return (
       <div className="hangman-game">
-        <h2>Wygrałeś !!!</h2>
+        <h2>Wygrałeś!!!</h2>
         <p>Słowo: {word}</p>
         <button onClick={() => resetGame()}>Zagraj ponownie</button>
       </div>
